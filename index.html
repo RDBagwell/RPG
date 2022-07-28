@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RPG</title>
+</head>
+<body>
+    <div class="gamebord">
+        <div id="overlapping" class="flash"></div>
+        <div id="battleUi" class="battleUi">
+            <div class="enemyHealth">
+                <h1 class="name">Draggle</h1>
+                <div class="healthBarContainer">
+                    <div class="healthBar"></div>
+                    <div id="enemyHealthbar" class="healthBarOver"></div>
+                </div>
+            </div>
+            <div class="playerHealth">
+                <h1 class="name">Emby</h1>
+                <div class="healthBarContainer">
+                    <div class="healthBar"></div>
+                    <div id="playerHealthbar" class="healthBarOver"></div>
+                </div>
+            </div>
+            <div class="attackInterface">
+                <div id="battleDialog" class="battleDialog"></div>
+                <div class="attacks">
+                    <!-- <button>Tackle</button>
+                    <button>Fireball</button> -->
+                </div>
+                <div class="attackType">
+                    <h1 class="attackTypeText">Attack Type</h1>
+                </div>
+            </div>
+        </div>
+        <canvas></canvas> 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./data/audio.js"></script>
+    <script src="./data/collisions.js"></script>
+    <script src="./data/battleZones.js"></script>
+    <script src="./data/attacks.js"></script>
+    <script src="./data/monsters.js"></script>
+    <script src="./classes.js"></script>
+    <script src="./index.js"></script>
+    <script src="./battleScene.js"></script>
+</body>
+</html>

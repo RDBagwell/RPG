@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    
+}
+
+.gamebord{
+    position: relative;
+    display: inline-block;
+}
+
+.flash{
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.attackInterface{
+    height: 140px;
+    background-color: whitesmoke;
+    border-top: 4px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.battleUi{
+    display: none;
+}
+
+.battleDialog{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background-color: whitesmoke;
+    display: none;
+    cursor: pointer;
+}
+
+.attacks{
+    width: 66.66%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.attacks button{
+    border: 0;
+    font-size: 16px;
+}
+
+.attacks button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.attackType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-left: 4px black solid;
+}
+
+.attackTypeText{
+    margin: 0;
+    font-size: 16px;
+}
+
+.enemyHealth, .playerHealth{
+    background-color: white;
+    width: 250px;
+    position: absolute;
+    border: 4px black solid;
+    padding: 12px;
+}
+
+.enemyHealth{
+    left: 50px;
+    top: 50px;
+}
+
+.name{
+    font-size: 1em;
+}
+
+.playerHealth{
+    right: 50px;
+    top: 300px;
+}
+
+.healthBarContainer{
+    position: relative;
+}
+
+.healthBar, .healthBarOver {
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.healthBar{
+    background-color: #ccc;
+}
+
+.healthBarOver{
+    background-color: green;
+}
